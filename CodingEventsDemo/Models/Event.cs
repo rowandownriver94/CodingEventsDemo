@@ -10,15 +10,20 @@ namespace CodingEventsDemo.Models
         public string Description { get; set; }
 
         public string ContactEmail { get; set; }
-
+        public string Location { get; set; }
+        public int NumOfAttendees { get; set; }
+        public bool IsTrue { get { return true; } }
         public int Id { get; }
         static private int nextId = 1;
 
-        public Event(string name, string description, string contactEmail)
+        public Event(string name, string description, string contactEmail, string location, int numOfAttendees, bool isTrue)
         {
             Name = name;
             Description = description;
             ContactEmail = contactEmail;
+            Location = location;
+            NumOfAttendees = numOfAttendees;
+
             Id = nextId;
             nextId++;
         }
