@@ -12,7 +12,8 @@ namespace CodingEventsDemo.Models
         public string ContactEmail { get; set; }
         public string Location { get; set; }
         public int NumOfAttendees { get; set; }
-        public bool IsTrue { get { return true; } }
+        public bool IsTrue { get; set; }
+        public EventType Type { get; set; }
         public int Id { get; }
         static private int nextId = 1;
 

@@ -29,9 +29,13 @@
         <span asp-validation-for="ContactEmail"></span>
     </div>
     <div class="form-group">
-        <label asp-for="IsTrue">Are attendees required to register?</label>
-        <input asp-for="IsTrue" />
-        <span asp-validation-for="IsTrue"></span>
+        <label asp-for="Type">Event Type</label>
+        <select asp-for="Type" asp-items="Model.EventTypes"></select>
     </div>
+    @*<div class="form-group">
+            <label asp-for="IsTrue">Are attendees required to register?</label>
+            <input type="checkbox" asp-for="IsTrue" />
+            <span asp-validation-for="IsTrue"></span>
+        </div>*@
     <input type="submit" value="Add Event" />
 </form>
