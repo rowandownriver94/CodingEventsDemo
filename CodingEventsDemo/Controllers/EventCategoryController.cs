@@ -40,7 +40,7 @@ namespace CodingEventsDemo.Controllers
             {
                 EventCategory newCategory = new EventCategory
                 {
-                    CategoryName = addEventCategoryViewModel.CategoryName
+                    CategoryName = addEventCategoryViewModel.Name
                 };
 
                 context.eventCategories.Add(newCategory);

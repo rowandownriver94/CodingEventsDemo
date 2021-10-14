@@ -10,6 +10,6 @@ namespace CodingEventsDemo.ViewModels
     {
         [Required(ErrorMessage = "Category name is required.")]
         [StringLength(20, MinimumLength = 3, ErrorMessage = "Category name must be between 3 and 20 characters long.")]
-        public string CategoryName { get; set; }
+        public string Name { get; set; }
     }
 }
