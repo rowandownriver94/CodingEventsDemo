@@ -8,8 +8,8 @@ namespace CodingEventsDemo.ViewModels
 {
     public class AddEventCategoryViewModel
     {
-        [Required(ErrorMessage = "Name is required.")]
-        [StringLength(20, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 20 characters long.")]
-        public string Name { get; set; }
+        [Required(ErrorMessage = "Category name is required.")]
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "Category name must be between 3 and 20 characters long.")]
+        public string CategoryName { get; set; }
     }
 }

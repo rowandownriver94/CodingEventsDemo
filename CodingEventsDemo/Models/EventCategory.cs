@@ -8,7 +8,7 @@ namespace CodingEventsDemo.Models
     public class EventCategory
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string CategoryName { get; set; }
 
         public EventCategory()
         {
@@ -17,7 +17,7 @@ namespace CodingEventsDemo.Models
 
         public EventCategory(string name)
         {
-            Name = name;
+            CategoryName = name;
         }
     }
 }
